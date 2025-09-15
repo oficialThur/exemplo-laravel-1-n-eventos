@@ -1,0 +1,155 @@
+body {
+	font-family: 'Segoe UI', Arial, sans-serif;
+	background: #181a1b;
+	margin: 0;
+	min-height: 100vh;
+	color: #f5f6fa;
+}
+
+header {
+	background: #23272f;
+	padding: 0;
+	box-shadow: 0 2px 12px #0005;
+}
+
+.navbar {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	max-width: 1100px;
+	margin: 0 auto;
+	padding: 0 32px;
+	height: 64px;
+}
+
+.navbar .logo {
+	font-size: 1.5em;
+	font-weight: bold;
+	color: #fff;
+	letter-spacing: 2px;
+}
+
+.navbar nav {
+	display: flex;
+	gap: 24px;
+}
+
+.navbar nav a {
+	color: #f5f6fa;
+	text-decoration: none;
+	font-weight: 500;
+	font-size: 1.08em;
+	padding: 6px 12px;
+	border-radius: 6px;
+	transition: background 0.2s, color 0.2s;
+}
+.navbar nav a:hover, .navbar nav a.active {
+	background: #fff;
+	color: #23272f;
+}
+
+.container {
+	max-width: 900px;
+	margin: 32px auto;
+	background: #23272f;
+	border-radius: 16px;
+	box-shadow: 0 4px 32px #0007;
+	padding: 40px 32px;
+}
+
+h1, h2, h3 {
+	color: #ffd700;
+	margin-top: 0;
+}
+
+form, ul {
+	background: #23272f;
+	padding: 24px 18px;
+	border-radius: 10px;
+	box-shadow: 0 2px 8px #0003;
+	margin-bottom: 24px;
+}
+
+input, textarea, select, button {
+	margin: 10px 0 18px 0;
+	padding: 10px;
+	border-radius: 6px;
+	border: 1px solid #444a57;
+	width: 100%;
+	font-size: 1em;
+	background: #181a1b;
+	color: #f5f6fa;
+	box-sizing: border-box;
+}
+
+button {
+	background: linear-gradient(90deg, #ffd700 60%, #ffb300 100%);
+	color: #23272f;
+	border: none;
+	cursor: pointer;
+	font-weight: 600;
+	letter-spacing: 1px;
+	transition: background 0.2s;
+	width: auto;
+	min-width: 120px;
+	padding: 10px 24px;
+	margin-top: 8px;
+}
+button:hover {
+	background: linear-gradient(90deg, #ffb300 60%, #ffd700 100%);
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+}
+li {
+	margin-bottom: 16px;
+	padding: 12px 0;
+	border-bottom: 1px solid #353a40;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+/* Links gerais */
+a {
+	color: #ffd700;
+	text-decoration: underline;
+	font-weight: 600;
+	transition: color 0.2s, background 0.2s, box-shadow 0.2s;
+	border-radius: 5px;
+	padding: 2px 6px;
+	outline: none;
+	cursor: pointer;
+}
+a:hover, a:focus {
+	color: #23272f;
+	background: #ffd700;
+	box-shadow: 0 2px 8px #ffd70044;
+	text-decoration: underline;
+}
+
+/* Links de ação (ex: Edit, Delete) */
+a.action-link {
+	color: #fff;
+	background: #444a57;
+	padding: 4px 12px;
+	margin-left: 8px;
+	border-radius: 6px;
+	font-size: 0.98em;
+	transition: background 0.2s, color 0.2s;
+}
+a.action-link:hover, a.action-link:focus {
+	background: #ffd700;
+	color: #23272f;
+}
+
+@media (max-width: 700px) {
+	.container {
+		padding: 12px 2vw;
+	}
+	.navbar {
+		padding: 0 8px;
+	}
+}
